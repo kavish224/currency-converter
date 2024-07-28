@@ -6,7 +6,7 @@ const populate = async (value, currency, convertTo) => {
     console.log(rJson["data"]["USD"], rJson["data"]["USD"]["value"]);
     document.querySelector("#output").style.display = "block"
     myStr += `
-                <h2>Converted Value</h2>
+                <h2>Converted Value:</h2>
                 <h2>${(rJson["data"][convertTo]["value"] * value).toFixed(2)}<h2/>
             `
     document.getElementById("output").innerHTML = myStr;
