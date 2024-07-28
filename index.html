@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteSculpt Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <img src="Screenshot_2024-03-22_at_6.23.34_PM-removebg-preview.png" alt="k">
+        </div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Pricing</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="first">SiteSculpt Currency Converter</h1>
+        <form action="/action.php" method="get"> 
+            <label for="value">Enter value:</label>
+            <input type="number" name="quantity" value="100">
+            <label for="currency">Choose a currency: </label>
+            <select name="currencies">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Pound Sterling</option>
+            </select>
+            <label for="convertTo">Convert to:</label>
+            <select name="convertTo" >
+                <option value="USD">US Dollar</option>
+                <option value="INR">Indian Rupee</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Pound Sterling</option>
+            </select>
+            <button class="btn">Submit</button>
+           
+        </form>
+        <div id="output">
+            <!-- <h2>Converted Value</h2> -->
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
